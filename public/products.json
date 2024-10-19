@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Adam Kuźma",
+    "description": "Very friendly man always cheating on exams.",
+    "price": 99.99,
+    "img": "kuzma.jpg",
+    "category": "People"
+  },
+  {
+    "id": 2,
+    "name": "Gaming Mouse",
+    "description": "High precision wireless gaming mouse with customizable buttons.",
+    "price": 59.99,
+    "img": "https://i.pinimg.com/564x/a4/53/67/a45367e27c573bc1df81f414f6d40e3f.jpg",
+    "category": "Accessories"
+  },
+  {
+    "id": 3,
+    "name": "Gaming Chair",
+    "description": "Ergonomic gaming chair with adjustable height and lumbar support.",
+    "price": 249.99,
+    "img": "https://i.pinimg.com/564x/a4/53/67/a45367e27c573bc1df81f414f6d40e3f.jpg",
+    "category": "Furniture"
+  },
+  {
+    "id": 4,
+    "name": "Gaming Headset",
+    "description": "Surround sound headset with noise-cancelling microphone.",
+    "price": 79.99,
+    "img": "https://i.pinimg.com/564x/a4/53/67/a45367e27c573bc1df81f414f6d40e3f.jpg",
+    "category": "Accessories"
+  },
+  {
+    "id": 5,
+    "name": "Gaming Monitor",
+    "description": "27-inch 144Hz gaming monitor with 1ms response time.",
+    "price": 299.99,
+    "img": "https://i.pinimg.com/564x/a4/53/67/a45367e27c573bc1df81f414f6d40e3f.jpg",
+    "category": "Electronics"
+  },
+  {
+    "id": 6,
+    "name": "Graphics Card",
+    "description": "High-performance graphics card for top-tier gaming.",
+    "price": 499.99,
+    "img": "https://i.pinimg.com/564x/a4/53/67/a45367e27c573bc1df81f414f6d40e3f.jpg",
+    "category": "Hardware"
+  },
+  {
+    "id": 7,
+    "name": "Gaming Laptop",
+    "description": "Portable gaming laptop with a powerful GPU and high refresh rate display.",
+    "price": 1499.99,
+    "img": "https://i.pinimg.com/564x/a4/53/67/a45367e27c573bc1df81f414f6d40e3f.jpg",
+    "category": "Computers"
+  },
+  {
+    "id": 8,
+    "name": "Gaming Desk",
+    "description": "Spacious desk with cable management designed for gamers.",
+    "price": 199.99,
+    "img": "https://i.pinimg.com/564x/a4/53/67/a45367e27c573bc1df81f414f6d40e3f.jpg",
+    "category": "Furniture"
+  },
+  {
+    "id": 9,
+    "name": "Streaming Camera",
+    "description": "High-definition webcam designed for game streaming.",
+    "price": 89.99,
+    "img": "https://i.pinimg.com/564x/a4/53/67/a45367e27c573bc1df81f414f6d40e3f.jpg",
+    "category": "Accessories"
+  },
+  {
+    "id": 10,
+    "name": "Gaming Console",
+    "description": "Next-gen gaming console with ultra-fast load times and 4K resolution.",
+    "price": 499.99,
+    "img": "https://i.pinimg.com/564x/a4/53/67/a45367e27c573bc1df81f414f6d40e3f.jpg",
+    "category": "Electronics"
+  }
+]
