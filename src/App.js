@@ -7,7 +7,6 @@ function App() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
   const [categories, setCategories] = useState([]);
-  const [promoCodes, setPromoCodes] = useState([]);
 
   const addToCart = (product) => {
     const newCart = [...cart, product];
@@ -15,16 +14,8 @@ function App() {
     setCart(newCart);
   };
 
-  const removeFromCart = (product) => {
-    const newCart = cart.splice(cart.indexOf(product), 1);
-    setCart(newCart);
-    console.log(cart);
-  };
-
-  const getPromoCodes = async () => {
-    const response = await axios.get("/promoCodes.json");
-    const data = response.data;
-    setPromoCodes(data);
+  const clearCart = () => {
+    setCart([]);
   };
 
   const getProduct = async () => {
@@ -47,7 +38,6 @@ function App() {
 
   useEffect(() => {
     getProduct();
-    getPromoCodes();
   }, []);
 
   useEffect(() => {
@@ -56,11 +46,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header
-        cart={cart}
-        removeFromCart={removeFromCart}
-        promoCodes={promoCodes}
-      />
+      <Header cart={cart} clearCart={clearCart} />
       <Products
         products={products}
         categories={categories}

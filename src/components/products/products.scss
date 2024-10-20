@@ -25,6 +25,7 @@
   .products {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     .product {
       border: 1px solid $borderGrey;
       margin: 10px;

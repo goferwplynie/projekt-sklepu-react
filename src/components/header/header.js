@@ -1,37 +1,34 @@
 import "./header.scss";
 import CartIcon from "./cart.icon";
 import React, { useState, useEffect } from "react";
-import Products from "../products/products";
 
 const Header = (props) => {
-  const { cart, removeFromCart, promoCodes } = props;
+  const { cart, clearCart } = props;
   const [cartState, setCartState] = useState(false);
   const [localCart, setLocalCart] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
-  const [validPromoCodes, setValidPromoCodes] = useState([]);
   const [promoCode, setPromoCode] = useState("");
+  const [promo, setPromo] = useState(1);
   const [message, setMessage] = useState("");
 
   const handleInputChange = (e) => {
     setPromoCode(e.target.value);
   };
 
-  const addPromoCodes = () => {
-    promoCodes.forEach((code) => {
-      let newValidCodes = [...validPromoCodes, code.name];
-      setValidPromoCodes(newValidCodes);
-    });
-  };
-
-  useEffect(() => {
-    addPromoCodes();
-  }, []);
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const validPromoCodes = ["PROMO10", "PROMO20", "PROMO30"];
+
     if (validPromoCodes.includes(promoCode)) {
       setMessage("Promo code applied successfully!");
+      if (promoCode === "PROMO10") {
+        setPromo(0.9);
+      } else if (promoCode === "PROMO20") {
+        setPromo(0.8);
+      } else if (promoCode === "PROMO30") {
+        setPromo(0.7);
+      }
     } else {
       setMessage("Invalid promo code.");
     }
@@ -43,13 +40,6 @@ const Header = (props) => {
 
   useEffect(() => {
     const setUpCart = (cart) => {
-      const item = {
-        id: null,
-        name: null,
-        count: 0,
-        price: 0,
-        totalPrice: 0,
-      };
       let items = [];
 
       cart.forEach((product) => {
@@ -81,7 +71,6 @@ const Header = (props) => {
       setLocalCart(items);
     };
     setUpCart(cart);
-    console.log(cart);
   }, [cart]);
 
   return (
@@ -98,6 +87,7 @@ const Header = (props) => {
       {cartState && (
         <div className="cart animate__animated animate__bounce">
           <h2>Koszyk</h2>
+          <button onClick={clearCart}>Clear</button>
           <div className="products">
             {localCart.map((product) => {
               return (
@@ -105,14 +95,13 @@ const Header = (props) => {
                   <p className="productName">
                     {product.name} x{product.count}
                   </p>
-                  <button onClick={() => removeFromCart(product)}>
-                    remove
-                  </button>
-                  <p>price:{product.totalPrice.toFixed(2)}</p>
+                  <p>price: {product.price}</p>
                 </div>
               );
             })}
-            <p className="totalPrice">Total: {totalPrice}</p>
+            <p className="totalPrice">
+              Total:{(totalPrice * promo).toFixed(2)}
+            </p>
             <form onSubmit={handleSubmit}>
               <input
                 type="text"
