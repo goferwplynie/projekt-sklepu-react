@@ -9,7 +9,6 @@ const Header = (props) => {
   const [totalPrice, setTotalPrice] = useState(0);
   const [promoCode, setPromoCode] = useState("");
   const [promo, setPromo] = useState(1);
-  const [message, setMessage] = useState("");
 
   const handleInputChange = (e) => {
     setPromoCode(e.target.value);
@@ -21,7 +20,6 @@ const Header = (props) => {
     const validPromoCodes = ["PROMO10", "PROMO20", "PROMO30"];
 
     if (validPromoCodes.includes(promoCode)) {
-      setMessage("Promo code applied successfully!");
       if (promoCode === "PROMO10") {
         setPromo(0.9);
       } else if (promoCode === "PROMO20") {
@@ -29,8 +27,6 @@ const Header = (props) => {
       } else if (promoCode === "PROMO30") {
         setPromo(0.7);
       }
-    } else {
-      setMessage("Invalid promo code.");
     }
 
     setPromoCode("");
@@ -76,18 +72,20 @@ const Header = (props) => {
   return (
     <div className="app-header-container">
       <header>
-        <div className="header container">
-          <h1>LOGO</h1>
-
-          <div onClick={cartClick}>
+        <div className="header-container">
+          <h1 className="logo">LOGO</h1>
+          <div className="cartIcon" onClick={cartClick}>
             <CartIcon width={40} />
+            <p className="cartCount">{cart.length}</p>
           </div>
         </div>
       </header>
       {cartState && (
         <div className="cart animate__animated animate__bounce">
           <h2>Koszyk</h2>
-          <button onClick={clearCart}>Clear</button>
+          <button className="clearButton" onClick={clearCart}>
+            Clear
+          </button>
           <div className="products">
             {localCart.map((product) => {
               return (
@@ -100,9 +98,10 @@ const Header = (props) => {
               );
             })}
             <p className="totalPrice">
+              <s>{promo < 1 && totalPrice}</s>
               Total:{(totalPrice * promo).toFixed(2)}
             </p>
-            <form onSubmit={handleSubmit}>
+            <form className="promoCodeForm" onSubmit={handleSubmit}>
               <input
                 type="text"
                 value={promoCode}
@@ -111,7 +110,6 @@ const Header = (props) => {
               />
               <button type="submit">Apply</button>
             </form>
-            {message && <p>{message}</p>}
           </div>
         </div>
       )}

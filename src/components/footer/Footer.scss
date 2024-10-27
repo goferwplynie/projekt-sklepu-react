@@ -1,6 +1,7 @@
 @import "../../colors.scss";
 
 footer {
-  background-color: $grey;
+  background-color: $footer;
   padding: 20px 40px;
+  color: $greyLight;
 }
