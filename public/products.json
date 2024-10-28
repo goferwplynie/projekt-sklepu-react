@@ -1,82 +1,82 @@
 [
   {
     "id": 1,
-    "name": "Adam Kuźma",
-    "description": "Very friendly man always cheating on exams.",
-    "price": 99.99,
-    "img": "kuzma.jpg",
-    "category": "People"
+    "name": "Razer DeathAdder V2 Gaming Mouse",
+    "description": "High-precision optical sensor, ergonomic design, and customizable buttons.",
+    "price": 69.99,
+    "img": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/3/pr_2020_3_26_6_49_24_340_00.jpg",
+    "category": "Accessories"
   },
   {
     "id": 2,
-    "name": "Gaming Mouse",
-    "description": "High precision wireless gaming mouse with customizable buttons.",
-    "price": 59.99,
-    "img": "https://i.pinimg.com/564x/a4/53/67/a45367e27c573bc1df81f414f6d40e3f.jpg",
+    "name": "Razer BlackWidow V3 Mechanical Keyboard",
+    "description": "Tactile mechanical switches with RGB Chroma lighting.",
+    "price": 139.99,
+    "img": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/12/pr_2020_12_23_13_32_35_698_00.jpg",
     "category": "Accessories"
   },
   {
     "id": 3,
-    "name": "Gaming Chair",
-    "description": "Ergonomic gaming chair with adjustable height and lumbar support.",
-    "price": 249.99,
-    "img": "https://i.pinimg.com/564x/a4/53/67/a45367e27c573bc1df81f414f6d40e3f.jpg",
+    "name": "Razer Iskur Gaming Chair",
+    "description": "Ergonomic gaming chair with lumbar support, designed for long hours of comfort.",
+    "price": 499.99,
+    "img": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/2/pr_2021_2_24_8_27_27_173_06.jpg",
     "category": "Furniture"
   },
   {
     "id": 4,
-    "name": "Gaming Headset",
-    "description": "Surround sound headset with noise-cancelling microphone.",
-    "price": 79.99,
-    "img": "https://i.pinimg.com/564x/a4/53/67/a45367e27c573bc1df81f414f6d40e3f.jpg",
+    "name": "Razer Kraken V3 X Gaming Headset",
+    "description": "Lightweight headset with surround sound and noise-canceling microphone.",
+    "price": 49.99,
+    "img": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/3/pr_2021_3_24_11_35_54_301_03.jpg",
     "category": "Accessories"
   },
   {
     "id": 5,
-    "name": "Gaming Monitor",
-    "description": "27-inch 144Hz gaming monitor with 1ms response time.",
-    "price": 299.99,
-    "img": "https://i.pinimg.com/564x/a4/53/67/a45367e27c573bc1df81f414f6d40e3f.jpg",
+    "name": "Razer Raptor 27 Gaming Monitor",
+    "description": "27-inch monitor with 144Hz refresh rate, 1ms response time, and Chroma lighting.",
+    "price": 799.99,
+    "img": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/8/pr_2020_8_19_10_44_9_894_00.jpg",
     "category": "Electronics"
   },
   {
     "id": 6,
-    "name": "Graphics Card",
-    "description": "High-performance graphics card for top-tier gaming.",
-    "price": 499.99,
-    "img": "https://i.pinimg.com/564x/a4/53/67/a45367e27c573bc1df81f414f6d40e3f.jpg",
-    "category": "Hardware"
+    "name": "Razer Blade Pro 17 i7/32GB/1TB/Win10 RTX3080 120Hz",
+    "description": "Top-performance graphics card designed for extreme gaming.",
+    "price": 16999.99,
+    "img": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/3/pr_2021_3_8_13_31_35_573_03.jpg",
+    "category": "Computers"
   },
   {
     "id": 7,
-    "name": "Gaming Laptop",
-    "description": "Portable gaming laptop with a powerful GPU and high refresh rate display.",
-    "price": 1499.99,
-    "img": "https://i.pinimg.com/564x/a4/53/67/a45367e27c573bc1df81f414f6d40e3f.jpg",
+    "name": "Razer Blade 15 Gaming Laptop",
+    "description": "Portable gaming laptop with NVIDIA GeForce RTX graphics and 144Hz display.",
+    "price": 9499.99,
+    "img": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2019/8/pr_2019_8_2_10_17_13_527_10.jpg",
     "category": "Computers"
   },
   {
     "id": 8,
-    "name": "Gaming Desk",
-    "description": "Spacious desk with cable management designed for gamers.",
-    "price": 199.99,
-    "img": "https://i.pinimg.com/564x/a4/53/67/a45367e27c573bc1df81f414f6d40e3f.jpg",
+    "name": "Razer Enki Gaming Chair",
+    "description": "All-day comfort gaming chair with optimized cushion density and body support.",
+    "price": 399.99,
+    "img": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/2/pr_2022_2_25_15_51_50_849_01.jpg",
     "category": "Furniture"
   },
   {
     "id": 9,
-    "name": "Streaming Camera",
-    "description": "High-definition webcam designed for game streaming.",
-    "price": 89.99,
-    "img": "https://i.pinimg.com/564x/a4/53/67/a45367e27c573bc1df81f414f6d40e3f.jpg",
+    "name": "Razer Kiyo Pro Streaming Camera",
+    "description": "Adaptive light sensor and high-performance optics for professional streaming.",
+    "price": 199.99,
+    "img": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/3/pr_2021_3_11_14_52_13_605_00.jpg",
     "category": "Accessories"
   },
   {
     "id": 10,
-    "name": "Gaming Console",
-    "description": "Next-gen gaming console with ultra-fast load times and 4K resolution.",
-    "price": 499.99,
-    "img": "https://i.pinimg.com/564x/a4/53/67/a45367e27c573bc1df81f414f6d40e3f.jpg",
+    "name": "Razer Wolverine V2 Black Gaming Controller",
+    "description": "Customizable gaming controller with ergonomic design and tactile feedback.",
+    "price": 389.99,
+    "img": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/2/pr_2021_2_23_13_48_19_71_00.jpg",
     "category": "Electronics"
   }
 ]

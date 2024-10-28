@@ -41,9 +41,9 @@
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
     justify-content: center;
-    width: 100vw;
+    width: 90vw;
 
-    @media (max-width: $breakpoint-large) {
+    @media (max-width: $breakpoint-xlarge) {
       grid-template-columns: 1fr;
     }
 
@@ -56,10 +56,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 80%;
-      height: 600px;
+      width: 90%;
+      height: 650px;
       justify-self: center;
       align-self: center;
+
+      @media (max-width: $breakpoint-xlarge) {
+        width: 90vw;
+      }
 
       h4 {
         margin-bottom: 20px;
@@ -75,13 +79,18 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        text-align: center;
       }
 
       .img {
-        height: 400px;
+        height: 100%;
         width: 100%;
         background: $imgMock;
         border-radius: 4px;
+        align-self: center;
+        justify-self: center;
+        border: 1px solid $borderGrey;
+        background-position: center;
       }
 
       .btn {
