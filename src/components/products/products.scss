@@ -77,7 +77,7 @@
       p.description {
         width: 100%;
         white-space: nowrap;
-        overflow: hidden;
+        text-wrap: wrap;
         text-overflow: ellipsis;
         text-align: center;
       }

@@ -73,7 +73,7 @@ const Header = (props) => {
     <div className="app-header-container">
       <header>
         <div className="header-container">
-          <h1 className="logo">LOGO</h1>
+          <img className="logo" src="razer-logo.png" alt="Razer logo"></img>
           <div className="cartIcon" onClick={cartClick}>
             <CartIcon width={40} />
             <p className="cartCount">{cart.length}</p>
